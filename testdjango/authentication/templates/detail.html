@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+{% load i18n %}
+<head>
+<meta name="layout" />
+<title>Welcome to Materializecss - Sass way</title>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{% load staticfiles %}
+<link type="text/css" rel="stylesheet" href="{% static 'sass/materialize.css' %}"  media="screen,projection"/>
+<style type="text/css">
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+</style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="https://scontent.fbsb9-1.fna.fbcdn.net/v/t1.0-9/21231826_386228971791553_1595435074415878727_n.jpg?oh=d6620513696f594488ea97a42ab87335&oe=5A1A38A8" class="brand-logo center"> <img class="responsive-img" src="static/images/My.png"</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="grey lighten-4">
+    <div class="container">
+        <h2>Sign Up</h2>
+        <div class="row">
+
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Placeholder" id="first_name" type="text" class="validate"> <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate"> <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input disabled value="I am not editable" id="disabled" type="text" class="validate"> <label for="disabled">Disabled</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate"> <label for="password">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate"> <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="input-field col s12">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">
+                        Submit <i class="material-icons right">send</i>
+                    </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="fixed-action-btn" style="bottom: 125px; right: 150 px;">
+            <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">add</i></a>
+        </div>
+    </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12"></div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                © 2015-2016 GhariaOnline, All rights reserved. <a class="grey-text text-lighten-4 right"
+                    href="https://github.com/Dogfalo/materialize/blob/master/LICENSE">Terms and Condition</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bin/materialize.min.js' %}"></script>
+
+</html>
